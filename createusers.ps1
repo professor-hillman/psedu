@@ -13,22 +13,22 @@ foreach ($user in $csv) {
     
     # Store User Attributes for Splatting
     $UserInfo = @{
-        Name = $user.Name
-        DisplayName = $user.Name
-        GivenName = $user.GivenName
-        Surname = $user.Surname
+        Name                  = $user.Name
+        DisplayName           = $user.Name
+        GivenName             = $user.GivenName
+        Surname               = $user.Surname
         
-        SamAccountName = $user.SamAccountName
-        Path = $user.Path
+        SamAccountName        = $user.SamAccountName
+        Path                  = $user.Path
         
-        Title = $user.Title
-        Department = $user.Department
-        Company = $user.Company
-        EmailAddress = $user.EmailAddress
+        Title                 = $user.Title
+        Department            = $user.Department
+        Company               = $user.Company
+        EmailAddress          = $user.EmailAddress
         
-        AccountPassword = $AccountPassword
+        AccountPassword       = $AccountPassword
         ChangePasswordAtLogon = $true
-        Enabled = $true
+        Enabled               = $true
     }
 
     # Create New Users
