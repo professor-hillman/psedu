@@ -1,7 +1,7 @@
 
 # Adds 30 random users to Acitve Directory, along with global and domain local groups
 
-# Change this to match your environment!!
+# Change these to match your environment!!  Make sure the OUs are present as well!!
 $domain   = 'lbcc.internal'
 $groupsOU = 'OU=Groups,OU=Corp,DC=lbcc,DC=internal'
 $usersOU  = 'OU=Users,OU=Corp,DC=lbcc,DC=internal'
